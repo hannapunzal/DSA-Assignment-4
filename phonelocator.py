@@ -32,3 +32,4 @@ map = folium.Map(location=[lat, lng], zoom_start=9)
 folium.Marker([lat,lng], popup=yourLocation).add_to(map)
 
 # save in html
+map.save("location.html")
