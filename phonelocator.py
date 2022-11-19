@@ -6,6 +6,9 @@ from opencage.geocoder import OpenCageGeocode
 # get phone number
 number = input("Enter the number you want to locate: ")
 phoneNumber = phonenumbers.parse(number)
+# get location
+yourLocation = geocoder.description_for_number(phoneNumber, "en")
+print(yourLocation)
 # get service provider
 # get gps lat long
 # save in html
