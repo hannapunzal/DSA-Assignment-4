@@ -10,5 +10,7 @@ phoneNumber = phonenumbers.parse(number)
 yourLocation = geocoder.description_for_number(phoneNumber, "en")
 print(yourLocation)
 # get service provider
+provider = phonenumbers.parse(number)
+print(carrier.name_for_number(provider,"en"))
 # get gps lat long
 # save in html
